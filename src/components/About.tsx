@@ -1,21 +1,13 @@
-
 import { Star, Award, Users } from 'lucide-react';
-
 const About = () => {
-  return (
-    <section className="py-20 bg-white">
+  return <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image */}
           <div className="animate-on-scroll">
             <div className="relative">
               <div className="absolute inset-0 bg-chrome-light rounded-3xl transform -rotate-3 opacity-30"></div>
-              <img 
-                src="/lovable-uploads/7bf96de5-d389-4e35-ab20-4b5b05009ab0.png"
-                alt="Karine Keppler em consulta nutricional, demonstrando cuidado e atenção com paciente"
-                className="relative rounded-3xl shadow-xl w-full max-w-md mx-auto object-cover h-[400px] md:h-[500px]"
-                loading="lazy"
-              />
+              <img alt="Karine Keppler em consulta nutricional, demonstrando cuidado e atenção com paciente" className="relative rounded-3xl shadow-xl w-full max-w-md mx-auto object-cover h-[400px] md:h-[500px]" loading="lazy" src="/lovable-uploads/45e3a580-9574-49fa-bc97-f290b837b80c.jpg" />
             </div>
           </div>
           
@@ -65,8 +57,6 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
