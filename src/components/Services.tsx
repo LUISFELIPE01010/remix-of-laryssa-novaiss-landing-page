@@ -1,5 +1,5 @@
 
-import { Target, Dumbbell, Heart, Utensils, Video, Brain } from 'lucide-react';
+import { Target, Dumbbell, Sparkles, Utensils, Video, Brain } from 'lucide-react';
 import { useState } from 'react';
 import ServiceModal from './ServiceModal';
 
@@ -20,10 +20,10 @@ const Services = () => {
       modalContent: "Quer ganhar músculo e definir seu corpo? Vou te ensinar exatamente como fazer isso através da alimentação. Com planejamento nutricional específico para hipertrofia, você vai otimizar seus treinos e acelerar os resultados. Trabalho com protocolos personalizados que consideram seu biotipo, rotina de exercícios e preferências alimentares. O resultado será um corpo mais forte, definido e saudável."
     },
     {
-      icon: Heart,
-      title: "Nutrição para mulheres com SOP, ansiedade ou TPM",
-      description: "Cuidado especializado para questões hormonais e emocionais femininas.",
-      modalContent: "Entendo profundamente os desafios que a SOP, ansiedade e TPM trazem para a vida da mulher. Por isso, desenvolvo estratégias nutricionais específicas para equilibrar seus hormônios e melhorar seu bem-estar emocional. Através de uma alimentação anti-inflamatória e suplementação direcionada, você vai perceber redução dos sintomas, melhora do humor e mais qualidade de vida. Cuidamos de você como um todo, não apenas dos sintomas."
+      icon: Sparkles,
+      title: "Ortomolecular",
+      description: "Reequilíbrio do organismo através de vitaminas, minerais e nutrientes específicos.",
+      modalContent: "A nutrição ortomolecular busca o equilíbrio do organismo através da correção de deficiências nutricionais e uso de suplementação personalizada. Através de exames específicos e avaliação detalhada, identificamos as necessidades do seu corpo para promover saúde, energia e bem-estar de forma integrada. Cada protocolo é único e desenvolvido especialmente para você."
     },
     {
       icon: Utensils,
@@ -35,13 +35,13 @@ const Services = () => {
       icon: Video,
       title: "Consultas online ou presenciais",
       description: "Flexibilidade total para caber na sua agenda e localização.",
-      modalContent: "Sua localização não pode ser um impeditivo para cuidar da sua saúde. Por isso ofereço atendimento 100% online para todo o Brasil, com a mesma qualidade e cuidado do presencial. Através de uma plataforma completa, você terá acesso a consultas, materiais educativos e acompanhamento personalizado. Se você está na região de Santos/Praia Grande, também atendo presencialmente em consultório acolhedor e moderno."
+      modalContent: "Sua localização não pode ser um impeditivo para cuidar da sua saúde. Por isso ofereço atendimento 100% online para todo o Brasil, com a mesma qualidade e cuidado do presencial. Através de uma plataforma completa, você terá acesso a consultas, materiais educativos e acompanhamento personalizado. Se você está na região de Praia Grande, também atendo presencialmente em consultório acolhedor e moderno."
     },
     {
       icon: Brain,
-      title: "Nutrição comportamental e mindful eating",
-      description: "Transforme sua relação com a comida através da consciência alimentar.",
-      modalContent: "Mais do que saber o que comer, é importante entender COMO e PORQUÊ comemos. Através da nutrição comportamental e técnicas de mindful eating, você vai desenvolver uma relação mais consciente e prazerosa com a alimentação. Vamos trabalhar questões como compulsão alimentar, comer emocional e ansiedade relacionada à comida. O resultado é uma transformação profunda que vai além da dieta - é uma nova forma de se relacionar com o alimento e com seu corpo."
+      title: "MÉTODO BMS (BODY. MIND. SOUL)",
+      description: "Transformação integral conectando corpo, mente e alma.",
+      modalContent: "O MÉTODO BMS é uma abordagem única que integra corpo (Body), mente (Mind) e alma (Soul) para uma transformação verdadeira e duradoura. Acredito que resultados reais nascem da conexão entre esses três pilares. Trabalhamos não apenas a alimentação, mas também os aspectos emocionais e comportamentais que influenciam suas escolhas. É uma jornada de autoconhecimento e empoderamento para acessar o seu melhor."
     }
   ];
 
@@ -52,18 +52,18 @@ const Services = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-rose mb-6">
             Como posso te ajudar?
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-rose-burnt to-rose-dark rounded-full mx-auto"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-chrome-gold to-chrome-dark rounded-full mx-auto"></div>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-white rounded-3xl p-8 shadow-lg hover-lift animate-on-scroll border border-rose-light/20"
+              className="bg-white rounded-3xl p-8 shadow-lg hover-lift animate-on-scroll border border-chrome-light/20"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-16 h-16 bg-gradient-to-br from-rose-light to-rose-accent rounded-2xl flex items-center justify-center mb-6">
-                <service.icon className="w-8 h-8 text-rose-dark" />
+              <div className="w-16 h-16 bg-gradient-to-br from-chrome-light to-gold-accent rounded-2xl flex items-center justify-center mb-6">
+                <service.icon className="w-8 h-8 text-chrome-dark" />
               </div>
               
               <h3 className="text-xl font-semibold text-gray-rose mb-4">
@@ -76,7 +76,7 @@ const Services = () => {
               
               <button 
                 onClick={() => setSelectedService(index)}
-                className="inline-flex items-center gap-2 text-rose-dark font-semibold hover:text-rose-dark/80 transition-colors"
+                className="inline-flex items-center gap-2 text-chrome-gold font-semibold hover:text-chrome-dark transition-colors"
                 aria-label={`Saber mais sobre ${service.title}`}
               >
                 Quero saber mais

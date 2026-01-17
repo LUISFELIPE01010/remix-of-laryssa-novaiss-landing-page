@@ -2,17 +2,17 @@
 import { MessageCircle, Instagram, MapPin, Clock, Phone, Heart } from 'lucide-react';
 
 const Contact = () => {
-  const whatsappUrl = "https://wa.me/5513996631392";
-  const instagramUrl = "https://instagram.com/laryssanutri";
+  const whatsappUrl = "https://wa.me/5513996631970";
+  const instagramUrl = "https://www.instagram.com/nutrikarinekeppler/";
 
   return (
-    <section className="py-20 bg-gradient-to-br from-rose-light/20 to-rose-accent/10">
+    <section className="py-20 bg-gradient-to-br from-chrome-light/20 to-gold-accent/10">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16 animate-on-scroll">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-rose mb-6">
             Vamos conversar?
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-rose-burnt to-rose-dark rounded-full mx-auto mb-4"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-chrome-gold to-chrome-dark rounded-full mx-auto mb-4"></div>
           <p className="text-lg text-gray-rose/80 max-w-2xl mx-auto">
             Estou aqui para te ajudar a transformar sua relação com a alimentação
           </p>
@@ -27,35 +27,33 @@ const Contact = () => {
               </h3>
               
               <div className="space-y-6">
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-2xl bg-rose-dark/10 hover:bg-rose-dark/20 transition-colors group" aria-label="Entrar em contato via WhatsApp">
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform" style={{
-                  backgroundColor: '#B8817A'
-                }}>
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-2xl bg-chrome-gold/10 hover:bg-chrome-gold/20 transition-colors group" aria-label="Entrar em contato via WhatsApp">
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform bg-chrome-gold">
                     <MessageCircle className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <p className="font-semibold text-gray-rose">WhatsApp</p>
-                    <p className="text-gray-rose/70">(13) 99663-1392</p>
+                    <p className="text-gray-rose/70">(13) 99663-1970</p>
                   </div>
                 </a>
                 
-                <a href={instagramUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-2xl bg-rose-light/30 hover:bg-rose-light/50 transition-colors group" aria-label="Seguir no Instagram">
-                  <div className="w-12 h-12 bg-rose-burnt rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                <a href={instagramUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-2xl bg-chrome-light/30 hover:bg-chrome-light/50 transition-colors group" aria-label="Seguir no Instagram">
+                  <div className="w-12 h-12 bg-chrome-gold rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
                     <Instagram className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <p className="font-semibold text-gray-rose">Instagram</p>
-                    <p className="text-gray-rose/70">@laryssanutri</p>
+                    <p className="text-gray-rose/70">@nutrikarinekeppler</p>
                   </div>
                 </a>
                 
-                <a href="tel:+5513996631392" className="flex items-center gap-4 p-4 rounded-2xl bg-nude-soft hover:bg-rose-light/30 transition-colors group" aria-label="Ligar para Laryssa Novais">
-                  <div className="w-12 h-12 bg-rose-burnt rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                <a href="tel:+5513996631970" className="flex items-center gap-4 p-4 rounded-2xl bg-nude-soft hover:bg-chrome-light/30 transition-colors group" aria-label="Ligar para Karine Keppler">
+                  <div className="w-12 h-12 bg-chrome-gold rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <p className="font-semibold text-gray-rose">Telefone</p>
-                    <p className="text-gray-rose/70">(13) 99663-1392</p>
+                    <p className="text-gray-rose/70">(13) 99663-1970</p>
                   </div>
                 </a>
               </div>
@@ -64,29 +62,29 @@ const Contact = () => {
             {/* Atendimento Info */}
             <div className="bg-white rounded-3xl p-8 shadow-lg">
               <h3 className="text-xl font-semibold text-gray-rose mb-6 flex items-center gap-2">
-                <MapPin className="w-6 h-6 text-rose-dark" />
+                <MapPin className="w-6 h-6 text-chrome-gold" />
                 Informações de Atendimento
               </h3>
               
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-rose-dark rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-chrome-gold rounded-full mt-2"></div>
                   <p className="text-gray-rose">
                     <strong>Online:</strong> Atendimento para todo o Brasil via consulta virtual
                   </p>
                 </div>
                 
                 <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-rose-burnt rounded-full mt-2"></div>
+                  <div className="w-2 h-2 bg-chrome-dark rounded-full mt-2"></div>
                   <p className="text-gray-rose">
-                    <strong>Presencial:</strong> Santos, Praia Grande, SP
+                    <strong>Presencial:</strong> Rua Campinas, 220 - Sala 18, Boqueirão - Praia Grande/SP
                   </p>
                 </div>
                 
                 <div className="flex items-start gap-3">
-                  <Clock className="w-5 h-5 text-rose-dark mt-0.5" />
+                  <Clock className="w-5 h-5 text-chrome-gold mt-0.5" />
                   <p className="text-gray-rose">
-                    <strong>Horários:</strong> Segunda a sexta, das 8h às 18h
+                    <strong>Horários:</strong> Segunda a quinta, das 08h às 18h | Sexta, das 08h às 12h
                   </p>
                 </div>
               </div>
@@ -95,7 +93,7 @@ const Contact = () => {
           
           {/* CTA Card with Professional Image */}
           <div className="animate-on-scroll">
-            <div className="bg-gradient-to-br from-rose-burnt to-rose-dark rounded-3xl p-8 lg:p-12 text-white shadow-2xl relative overflow-hidden">
+            <div className="bg-gradient-to-br from-chrome-gold to-chrome-dark rounded-3xl p-8 lg:p-12 text-white shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 opacity-10">
                 
               </div>
@@ -106,10 +104,10 @@ const Contact = () => {
                   Pronta para transformar sua vida?
                 </h3>
                 <p className="text-lg mb-8 leading-relaxed">
-                  Não espere mais para cuidar de você. Vamos juntas construir uma relação leve e amorosa com a alimentação.
+                  Não espere mais para cuidar de você. Vamos juntas construir uma relação saudável entre corpo, mente e alma.
                 </p>
                 
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-white text-rose-dark px-8 py-4 rounded-full font-semibold text-lg hover-lift shadow-lg hover:shadow-xl transition-all" aria-label="Agendar consulta nutricional">
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-white text-chrome-gold px-8 py-4 rounded-full font-semibold text-lg hover-lift shadow-lg hover:shadow-xl transition-all" aria-label="Agendar consulta nutricional">
                   <MessageCircle className="w-6 h-6" />
                   Agendar minha consulta
                 </a>

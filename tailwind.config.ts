@@ -63,13 +63,14 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Updated color palette - removed green colors
-				'rose-light': '#FADADD',
-				'nude-soft': '#FFEFF0',
-				'gray-rose': '#4A4A4A', // Darker for better contrast
-				'rose-burnt': '#B8817A', // Adjusted for better contrast
-				'rose-dark': '#8B5A5A', // New darker rose for high contrast elements
-				'rose-accent': '#E8B5B5' // New lighter rose for accents
+				// Updated color palette - Chrome/Gold theme for Karine Keppler
+				'chrome-gold': '#C5A572',
+				'chrome-light': '#D4B896',
+				'chrome-dark': '#A68B4B',
+				'nude-soft': '#FAF8F5',
+				'gray-rose': '#4A4A4A',
+				'gold-accent': '#E8D5B5',
+				'gold-dark': '#8B7355'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
