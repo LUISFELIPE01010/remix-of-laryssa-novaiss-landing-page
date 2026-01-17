@@ -10,7 +10,7 @@ interface ServiceModalProps {
 }
 
 const ServiceModal = ({ isOpen, onClose, title, content }: ServiceModalProps) => {
-  const whatsappUrl = "https://wa.me/5513996631392";
+  const whatsappUrl = "https://wa.me/5513996631970";
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
@@ -38,7 +38,7 @@ const ServiceModal = ({ isOpen, onClose, title, content }: ServiceModalProps) =>
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 bg-rose-dark text-white px-8 py-4 rounded-full font-semibold text-lg hover-lift shadow-lg hover:bg-rose-dark/90 transition-all w-full"
+              className="inline-flex items-center justify-center gap-3 bg-chrome-gold text-white px-8 py-4 rounded-full font-semibold text-lg hover-lift shadow-lg hover:bg-chrome-dark transition-all w-full"
               aria-label="Entrar em contato via WhatsApp"
             >
               <MessageCircle className="w-6 h-6" />
