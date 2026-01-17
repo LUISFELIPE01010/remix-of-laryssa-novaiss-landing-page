@@ -24,7 +24,7 @@ const Testimonials = () => {
       quote: "Pensava que nunca conseguiria ganhar massa magra. A Karine me provou o contrário com um plano perfeito para mim!",
       name: "Patrícia",
       age: "29 anos",
-      image: "/lovable-uploads/664513b9-6638-4e15-a37f-a7e3a043e268.png"
+      image: "/lovable-uploads/patricia-testimonial.png"
     },
     {
       quote: "A consulta com a Karine foi transformadora. Ela realmente escuta e cria um plano que funciona na vida real, não só na teoria.",
