@@ -12,7 +12,7 @@ const Results = () => {
       feedback: "Me sinto mais leve, confiante e com energia. Aprendi que é possível emagrecer com saúde!"
     },
     {
-      image: "https://images.unsplash.com/photo-1594736797933-d0c4a7d0daa3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+      image: "/lovable-uploads/ana-result.jpg",
       alt: "Mulher forte e definida mostrando ganho de massa magra",
       title: "Corpo Forte e Definido",
       description: "5kg de massa magra conquistados",
@@ -20,7 +20,7 @@ const Results = () => {
       feedback: "Ganhei músculos e disposição. Finalmente entendi como me alimentar para ter o corpo que sempre quis."
     },
     {
-      image: "https://images.unsplash.com/photo-1506629905607-c28b29b5f7d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+      image: "/lovable-uploads/carla-result.jpg",
       alt: "Mulher radiante e energética após transformação nutricional",
       title: "Energia e Vitalidade",
       description: "Disposição e bem-estar recuperados",
