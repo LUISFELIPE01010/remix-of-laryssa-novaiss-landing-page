@@ -12,7 +12,7 @@ const Testimonials = () => {
       quote: "Depois do acompanhamento com a Karine, me senti empoderada e finalmente em paz com meu corpo. Ela entende as dificuldades da mulher moderna.",
       name: "Juliana", 
       age: "35 anos",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+      image: "/lovable-uploads/juliana-testimonial.png"
     },
     {
       quote: "O cuidado da Karine vai além da nutrição. Ela me ajudou a ter uma relação saudável com a comida e comigo mesma. Recomendo de olhos fechados!",
