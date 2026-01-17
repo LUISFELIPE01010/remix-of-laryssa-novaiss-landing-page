@@ -1,4 +1,3 @@
-
 import { useState, useCallback } from 'react';
 import { CheckCircle, ArrowRight, MessageCircle } from 'lucide-react';
 
@@ -95,11 +94,11 @@ const Quiz = () => {
   if (showResult) {
     const result = getResult();
     return (
-      <section className="py-20 bg-gradient-to-br from-rose-light/30 to-rose-accent/20">
+      <section className="py-20 bg-gradient-to-br from-nude-soft to-chrome-light/20">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl">
+          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl border border-chrome-light/30">
             <div className="mb-8">
-              <CheckCircle className="w-20 h-20 text-rose-dark mx-auto mb-6" />
+              <CheckCircle className="w-20 h-20 text-chrome-gold mx-auto mb-6" />
               <h3 className="text-2xl md:text-3xl font-bold text-gray-rose mb-4">
                 {result.title}
               </h3>
@@ -110,10 +109,10 @@ const Quiz = () => {
             
             <div className="space-y-4">
               <a 
-                href="https://wa.me/5513996631392"
+                href="https://wa.me/5513996631970"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 bg-rose-dark text-white px-8 py-4 rounded-full font-semibold text-lg hover-lift shadow-lg hover:bg-rose-dark/90 transition-all"
+                className="inline-flex items-center justify-center gap-3 bg-chrome-gold text-white px-8 py-4 rounded-full font-semibold text-lg hover-lift shadow-lg hover:bg-chrome-dark transition-all"
                 aria-label="Conversar sobre resultado do quiz via WhatsApp"
               >
                 <MessageCircle className="w-6 h-6" />
@@ -124,7 +123,7 @@ const Quiz = () => {
                 <button 
                   onClick={resetQuiz}
                   disabled={isTransitioning}
-                  className="text-rose-dark hover:text-rose-dark/80 transition-colors disabled:opacity-50"
+                  className="text-chrome-gold hover:text-chrome-dark transition-colors disabled:opacity-50 font-medium"
                   aria-label="Refazer quiz nutricional"
                 >
                   Refazer o quiz
@@ -138,28 +137,28 @@ const Quiz = () => {
   }
 
   return (
-    <section className="py-20 bg-gradient-to-br from-rose-light/30 to-rose-accent/20">
+    <section className="py-20 bg-gradient-to-br from-nude-soft to-chrome-light/20">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-rose mb-6">
             Descubra seu caminho ideal
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-rose-burnt to-rose-dark rounded-full mx-auto mb-4"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-chrome-gold to-chrome-dark rounded-full mx-auto mb-4"></div>
           <p className="text-lg text-gray-rose/80">
             Será que o melhor caminho para você é emagrecer ou ganhar massa?
           </p>
         </div>
         
-        <div className="bg-white rounded-3xl p-6 md:p-8 lg:p-12 shadow-2xl">
+        <div className="bg-white rounded-3xl p-6 md:p-8 lg:p-12 shadow-2xl border border-chrome-light/30">
           {/* Progress Bar */}
           <div className="mb-8">
             <div className="flex justify-between text-sm text-gray-rose/60 mb-2">
               <span>Pergunta {currentQuestion + 1} de {questions.length}</span>
               <span>{Math.round(((currentQuestion + 1) / questions.length) * 100)}%</span>
             </div>
-            <div className="w-full bg-rose-light/30 rounded-full h-2">
+            <div className="w-full bg-chrome-light/30 rounded-full h-2">
               <div 
-                className="bg-gradient-to-r from-rose-burnt to-rose-dark h-2 rounded-full transition-all duration-300"
+                className="bg-gradient-to-r from-chrome-gold to-chrome-dark h-2 rounded-full transition-all duration-300"
                 style={{ width: `${((currentQuestion + 1) / questions.length) * 100}%` }}
               ></div>
             </div>
@@ -176,12 +175,12 @@ const Quiz = () => {
                   key={`${currentQuestion}-${index}`}
                   onClick={() => handleAnswer(option)}
                   disabled={isTransitioning}
-                  className="w-full text-left p-6 rounded-2xl border-2 border-rose-light/30 hover:border-rose-dark/50 hover:bg-rose-light/20 transition-all duration-200 group disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full text-left p-6 rounded-2xl border-2 border-chrome-light/50 hover:border-chrome-gold hover:bg-chrome-light/20 transition-all duration-200 group disabled:opacity-50 disabled:cursor-not-allowed"
                   aria-label={`Selecionar opção: ${option}`}
                 >
                   <div className="flex items-center justify-between">
                     <span className="text-gray-rose">{option}</span>
-                    <ArrowRight className="w-5 h-5 text-rose-dark opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <ArrowRight className="w-5 h-5 text-chrome-gold opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
                 </button>
               ))}
