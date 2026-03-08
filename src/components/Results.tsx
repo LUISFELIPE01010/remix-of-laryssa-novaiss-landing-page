@@ -8,7 +8,7 @@ const Results = () => {
 
   const resultItems = [
     {
-      image: resultDistensao,
+      image: '/lovable-uploads/ana-result.jpg',
       alt: 'Paciente com alívio da distensão abdominal',
       title: 'Alívio da Distensão',
       description: 'Fim do desconforto abdominal',
@@ -17,7 +17,7 @@ const Results = () => {
         'Depois de anos sofrendo com barriga inchada, finalmente encontrei alívio com o acompanhamento da Lethícia!',
     },
     {
-      image: resultSaudeIntestinal,
+      image: '/lovable-uploads/carla-result.jpg',
       alt: 'Paciente com saúde intestinal restaurada',
       title: 'Saúde Intestinal Restaurada',
       description: 'Equilíbrio digestivo conquistado',
@@ -26,7 +26,7 @@ const Results = () => {
         'Minha digestão melhorou completamente. Sem mais gases, sem mais desconforto. Me sinto outra pessoa!',
     },
     {
-      image: resultRelacaoComida,
+      image: '/lovable-uploads/juliana-testimonial.png',
       alt: 'Paciente com relação saudável com a comida',
       title: 'Relação Saudável com a Comida',
       description: 'Sem culpa, sem restrição',
@@ -34,7 +34,7 @@ const Results = () => {
       feedback: 'Aprendi a comer sem medo e sem culpa. A nutrição comportamental mudou minha vida.',
     },
     {
-      image: resultIntolerancias,
+      image: '/lovable-uploads/patricia-testimonial.png',
       alt: 'Paciente feliz com resultado do tratamento',
       title: 'Fim das Intolerâncias',
       description: 'Identificação e manejo alimentar',
@@ -42,7 +42,7 @@ const Results = () => {
       feedback: 'Descobri quais alimentos me faziam mal e hoje tenho um cardápio variado e sem sintomas.',
     },
     {
-      image: resultEnergia,
+      image: '/lovable-uploads/lethicia-foto1.jpg',
       alt: 'Paciente ativa e com mais energia',
       title: 'Mais Energia e Disposição',
       description: 'Bem-estar recuperado',
