@@ -95,6 +95,7 @@ const Quiz = () => {
   if (showResult) {
     const result = getResult();
     return (
+      <>
       <section className="py-20 bg-gradient-to-br from-nude-soft to-chrome-light/20">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl border border-chrome-light/30">
