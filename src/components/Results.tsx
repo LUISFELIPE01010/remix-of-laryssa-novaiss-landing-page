@@ -7,7 +7,7 @@ const Results = () => {
   const [formOpen, setFormOpen] = useState(false);
   const beforeAfterImages = [
     {
-      image: "/images/result-maria.jpg",
+      image: "/lovable-uploads/result-maria.png",
       alt: "Paciente saudável após tratamento gastrointestinal",
       title: "Alívio da Distensão",
       description: "Fim do desconforto abdominal",
