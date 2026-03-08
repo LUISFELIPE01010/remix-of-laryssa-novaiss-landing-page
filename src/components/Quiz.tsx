@@ -1,11 +1,13 @@
 import { useState, useCallback } from 'react';
 import { CheckCircle, ArrowRight, MessageCircle } from 'lucide-react';
+import WhatsAppFormModal from './WhatsAppFormModal';
 
 const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<string[]>([]);
   const [showResult, setShowResult] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [formOpen, setFormOpen] = useState(false);
 
   const questions = [
     {
@@ -93,6 +95,7 @@ const Quiz = () => {
   if (showResult) {
     const result = getResult();
     return (
+      <>
       <section className="py-20 bg-gradient-to-br from-nude-soft to-chrome-light/20">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl border border-chrome-light/30">
@@ -107,16 +110,14 @@ const Quiz = () => {
             </div>
             
             <div className="space-y-4">
-              <a 
-                href="https://wa.me/5513981214037"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button 
+                onClick={() => setFormOpen(true)}
                 className="inline-flex items-center justify-center gap-3 bg-chrome-gold text-white px-8 py-4 rounded-full font-semibold text-lg hover-lift shadow-lg hover:bg-chrome-dark transition-all"
                 aria-label="Conversar sobre resultado do quiz via WhatsApp"
               >
                 <MessageCircle className="w-6 h-6" />
                 Vamos conversar sobre isso?
-              </a>
+              </button>
               
               <div>
                 <button 
@@ -132,6 +133,8 @@ const Quiz = () => {
           </div>
         </div>
       </section>
+      <WhatsAppFormModal isOpen={formOpen} onClose={() => setFormOpen(false)} />
+      </>
     );
   }
 

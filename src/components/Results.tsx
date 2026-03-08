@@ -1,7 +1,10 @@
 import { Star, TrendingUp, Heart, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { useState } from 'react';
+import WhatsAppFormModal from './WhatsAppFormModal';
 
 const Results = () => {
+  const [formOpen, setFormOpen] = useState(false);
   const beforeAfterImages = [
     {
       image: "/images/result-maria.jpg",
@@ -46,6 +49,7 @@ const Results = () => {
   ];
 
   return (
+    <>
     <section className="py-20 bg-gradient-to-b from-white to-nude-soft">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16 animate-on-scroll">
@@ -120,20 +124,20 @@ const Results = () => {
               pode melhorar sua saúde intestinal e sua qualidade de vida.
             </p>
             
-            <a 
-              href="https://wa.me/5513981214037" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <button 
+              onClick={() => setFormOpen(true)}
               className="inline-flex items-center gap-2 bg-chrome-gold text-white px-8 py-4 rounded-full font-semibold hover-lift shadow-lg hover:bg-chrome-dark transition-all"
               aria-label="Agendar consulta via WhatsApp"
             >
               Quero cuidar da minha saúde
               <ArrowRight className="w-5 h-5" />
-            </a>
+            </button>
           </div>
         </div>
       </div>
     </section>
+      <WhatsAppFormModal isOpen={formOpen} onClose={() => setFormOpen(false)} />
+    </>
   );
 };
 

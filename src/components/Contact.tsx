@@ -1,8 +1,10 @@
 import { MessageCircle, Instagram, MapPin, Clock, Phone, Heart } from 'lucide-react';
+import { useState } from 'react';
+import WhatsAppFormModal from './WhatsAppFormModal';
 
 const Contact = () => {
-  const whatsappUrl = "https://wa.me/5513981214037";
   const instagramUrl = "https://www.instagram.com/nutri.lethicia/";
+  const [formOpen, setFormOpen] = useState(false);
 
   return (
     <section className="py-20 bg-gradient-to-br from-chrome-light/20 to-gold-accent/10">
@@ -26,7 +28,7 @@ const Contact = () => {
               </h3>
               
               <div className="space-y-6">
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-2xl bg-chrome-gold/10 hover:bg-chrome-gold/20 transition-colors group" aria-label="Entrar em contato via WhatsApp">
+                <button onClick={() => setFormOpen(true)} className="flex items-center gap-4 p-4 rounded-2xl bg-chrome-gold/10 hover:bg-chrome-gold/20 transition-colors group w-full text-left" aria-label="Entrar em contato via WhatsApp">
                   <div className="w-12 h-12 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform bg-chrome-gold">
                     <MessageCircle className="w-6 h-6 text-white" />
                   </div>
@@ -34,7 +36,7 @@ const Contact = () => {
                     <p className="font-semibold text-gray-rose">WhatsApp</p>
                     <p className="text-gray-rose/70">(13) 98121-4037</p>
                   </div>
-                </a>
+                </button>
                 
                 <a href={instagramUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 rounded-2xl bg-chrome-light/30 hover:bg-chrome-light/50 transition-colors group" aria-label="Seguir no Instagram">
                   <div className="w-12 h-12 bg-chrome-gold rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -102,10 +104,10 @@ const Contact = () => {
                   Não espere mais para cuidar do seu intestino e da sua relação com a comida. Vamos juntas construir uma alimentação que respeita o seu corpo.
                 </p>
                 
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-white text-chrome-gold px-8 py-4 rounded-full font-semibold text-lg hover-lift shadow-lg hover:shadow-xl transition-all" aria-label="Agendar consulta nutricional">
+                <button onClick={() => setFormOpen(true)} className="inline-flex items-center justify-center gap-3 bg-white text-chrome-gold px-8 py-4 rounded-full font-semibold text-lg hover-lift shadow-lg hover:shadow-xl transition-all" aria-label="Agendar consulta nutricional">
                   <MessageCircle className="w-6 h-6" />
                   Agendar minha consulta
-                </a>
+                </button>
                 
                 <p className="text-sm mt-6 opacity-90">
                   Primeira consulta: avaliação completa e plano personalizado
@@ -115,6 +117,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
+      <WhatsAppFormModal isOpen={formOpen} onClose={() => setFormOpen(false)} />
     </section>
   );
 };

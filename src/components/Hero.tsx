@@ -1,17 +1,18 @@
 import { Phone, MessageCircle, Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import WhatsAppFormModal from './WhatsAppFormModal';
 
 const navLinks = [
-{ label: 'Sobre', href: '#about' },
-{ label: 'Serviços', href: '#services' },
-{ label: 'Resultados', href: '#results' },
-{ label: 'Depoimentos', href: '#testimonials' },
-{ label: 'Contato', href: '#contact' }];
-
+  { label: 'Sobre', href: '#about' },
+  { label: 'Serviços', href: '#services' },
+  { label: 'Resultados', href: '#results' },
+  { label: 'Depoimentos', href: '#testimonials' },
+  { label: 'Contato', href: '#contact' }
+];
 
 const Hero = () => {
-  const whatsappUrl = "https://wa.me/5513981214037";
   const [menuOpen, setMenuOpen] = useState(false);
+  const [formOpen, setFormOpen] = useState(false);
 
   return (
     <section className="min-h-screen flex flex-col bg-gradient-to-br from-white to-nude-soft">
@@ -23,13 +24,13 @@ const Hero = () => {
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) =>
-            <a key={link.href} href={link.href} className="text-sm font-medium text-gray-rose hover:text-chrome-gold transition-colors">
+              <a key={link.href} href={link.href} className="text-sm font-medium text-gray-rose hover:text-chrome-gold transition-colors">
                 {link.label}
               </a>
             )}
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="bg-chrome-gold text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-chrome-dark transition-all">
+            <button onClick={() => setFormOpen(true)} className="bg-chrome-gold text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-chrome-dark transition-all">
               Agendar
-            </a>
+            </button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -40,15 +41,15 @@ const Hero = () => {
 
         {/* Mobile Nav */}
         {menuOpen &&
-        <nav className="md:hidden mt-4 pb-4 flex flex-col gap-3 border-t border-chrome-light/30 pt-4">
+          <nav className="md:hidden mt-4 pb-4 flex flex-col gap-3 border-t border-chrome-light/30 pt-4">
             {navLinks.map((link) =>
-          <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="text-sm font-medium text-gray-rose hover:text-chrome-gold transition-colors px-2 py-1">
+              <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="text-sm font-medium text-gray-rose hover:text-chrome-gold transition-colors px-2 py-1">
                 {link.label}
               </a>
-          )}
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="bg-chrome-gold text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-chrome-dark transition-all text-center mt-2">
+            )}
+            <button onClick={() => { setFormOpen(true); setMenuOpen(false); }} className="bg-chrome-gold text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-chrome-dark transition-all text-center mt-2">
               Agendar consulta
-            </a>
+            </button>
           </nav>
         }
       </header>
@@ -83,10 +84,10 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-chrome-gold text-white px-8 py-4 rounded-full font-semibold text-lg hover-lift shadow-lg hover:bg-chrome-dark transition-all" aria-label="Entrar em contato via WhatsApp">
+              <button onClick={() => setFormOpen(true)} className="inline-flex items-center justify-center gap-3 bg-chrome-gold text-white px-8 py-4 rounded-full font-semibold text-lg hover-lift shadow-lg hover:bg-chrome-dark transition-all" aria-label="Agendar consulta">
                 <MessageCircle className="w-6 h-6" />
                 Agendar consulta
-              </a>
+              </button>
               
               <a href="tel:+5513981214037" className="inline-flex items-center justify-center gap-3 bg-transparent border-2 border-chrome-gold text-chrome-gold px-8 py-4 rounded-full font-semibold text-lg hover-lift hover:bg-chrome-gold hover:text-white transition-all whitespace-nowrap" aria-label="Ligar para Lethícia Nunes">
                 <Phone className="w-6 h-6 flex-shrink-0" />
@@ -96,8 +97,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>);
 
+      <WhatsAppFormModal isOpen={formOpen} onClose={() => setFormOpen(false)} />
+    </section>
+  );
 };
 
 export default Hero;
