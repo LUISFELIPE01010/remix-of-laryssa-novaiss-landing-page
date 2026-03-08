@@ -44,10 +44,10 @@ const WhatsAppFormModal = ({ isOpen, onClose }: WhatsAppFormModalProps) => {
       return;
     }
 
-    const message = `Olá! Meu nome é *${result.data.name}*.\n\n` +
-      `🎯 *Objetivo da consulta:* ${result.data.goal}\n` +
-      `📍 *Preferência:* ${result.data.preference}\n\n` +
-      `Gostaria de agendar uma consulta!`;
+    const message = "Olá! Meu nome é *" + result.data.name + "*.\n\n" +
+      "Objetivo da consulta: " + result.data.goal + "\n" +
+      "Preferência: " + result.data.preference + "\n\n" +
+      "Gostaria de agendar uma consulta!";
 
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank', 'noopener,noreferrer');
