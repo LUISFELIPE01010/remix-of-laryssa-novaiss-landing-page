@@ -15,6 +15,14 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="flex-1 flex items-center justify-center px-4 py-12">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+          {/* Image - appears first on mobile */}
+          <div className="animate-slide-in-right lg:order-2 order-first">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-br from-chrome-light to-gold-accent rounded-3xl transform rotate-6 opacity-20"></div>
+              <img alt="Lethícia Nunes, nutricionista sorrindo em ambiente profissional" className="relative rounded-3xl shadow-2xl w-full max-w-md mx-auto object-cover h-[500px] md:h-[600px]" loading="eager" src="/lovable-uploads/lethicia-foto3.jpg" />
+            </div>
+          </div>
+
           {/* Text Content */}
           <div className="space-y-8 animate-slide-in-left">
             <div className="flex items-center gap-2 text-chrome-gold">
