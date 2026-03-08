@@ -109,16 +109,14 @@ const Quiz = () => {
             </div>
             
             <div className="space-y-4">
-              <a 
-                href="https://wa.me/5513981214037"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button 
+                onClick={() => setFormOpen(true)}
                 className="inline-flex items-center justify-center gap-3 bg-chrome-gold text-white px-8 py-4 rounded-full font-semibold text-lg hover-lift shadow-lg hover:bg-chrome-dark transition-all"
                 aria-label="Conversar sobre resultado do quiz via WhatsApp"
               >
                 <MessageCircle className="w-6 h-6" />
                 Vamos conversar sobre isso?
-              </a>
+              </button>
               
               <div>
                 <button 
