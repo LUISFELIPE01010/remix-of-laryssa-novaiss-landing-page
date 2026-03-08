@@ -1,5 +1,4 @@
-
-import { Target, Dumbbell, Sparkles, Utensils, Video, Brain } from 'lucide-react';
+import { Stethoscope, HeartPulse, Salad, Brain, Video, Leaf } from 'lucide-react';
 import { useState } from 'react';
 import ServiceModal from './ServiceModal';
 
@@ -8,40 +7,40 @@ const Services = () => {
   
   const services = [
     {
-      icon: Target,
-      title: "Emagrecimento saudável e consciente",
-      description: "Perca peso de forma sustentável, sem dietas restritivas ou sofrimento.",
-      modalContent: "Com meu método de emagrecimento consciente, você vai aprender a perder peso de forma natural e duradoura. Sem dietas malucas, sem passar fome e sem culpa. Trabalho com estratégias personalizadas que respeitam seu corpo, sua rotina e suas preferências alimentares. O resultado? Uma transformação que vai muito além da balança - você vai se sentir mais disposta, confiante e em paz com a comida."
+      icon: Stethoscope,
+      title: "Saúde Gastrointestinal",
+      description: "Tratamento de distensão abdominal, constipação, diarreia, refluxo e desequilíbrios intestinais.",
+      modalContent: "Atendo pacientes com queixas gastrointestinais como distensão abdominal, constipação, diarreia, refluxo, intolerâncias alimentares e desequilíbrios intestinais. Através de uma avaliação detalhada, identificamos as causas dos sintomas e criamos um plano nutricional personalizado focado na melhora da saúde intestinal e da qualidade de vida."
     },
     {
-      icon: Dumbbell,
-      title: "Ganho de massa magra",
-      description: "Estratégias nutricionais para fortalecer e tonificar seu corpo de forma natural.",
-      modalContent: "Quer ganhar músculo e definir seu corpo? Vou te ensinar exatamente como fazer isso através da alimentação. Com planejamento nutricional específico para hipertrofia, você vai otimizar seus treinos e acelerar os resultados. Trabalho com protocolos personalizados que consideram seu biotipo, rotina de exercícios e preferências alimentares. O resultado será um corpo mais forte, definido e saudável."
-    },
-    {
-      icon: Sparkles,
-      title: "Ortomolecular",
-      description: "Reequilíbrio do organismo através de vitaminas, minerais e nutrientes específicos.",
-      modalContent: "A nutrição ortomolecular busca o equilíbrio do organismo através da correção de deficiências nutricionais e uso de suplementação personalizada. Através de exames específicos e avaliação detalhada, identificamos as necessidades do seu corpo para promover saúde, energia e bem-estar de forma integrada. Cada protocolo é único e desenvolvido especialmente para você."
-    },
-    {
-      icon: Utensils,
-      title: "Reeducação alimentar para a vida real",
-      description: "Aprenda a comer bem dentro da sua rotina, sem complicações.",
-      modalContent: "Chega de regras complicadas e cardápios impossíveis de seguir! Minha reeducação alimentar é prática e feita para a vida real. Você vai aprender a fazer escolhas inteligentes em qualquer situação - no trabalho, em casa, no restaurante ou na casa da sogra. Ensino estratégias simples que se encaixam na sua rotina e te dão liberdade para viver sem neurose com a comida."
-    },
-    {
-      icon: Video,
-      title: "Consultas online ou presenciais",
-      description: "Flexibilidade total para caber na sua agenda e localização.",
-      modalContent: "Sua localização não pode ser um impeditivo para cuidar da sua saúde. Por isso ofereço atendimento 100% online para todo o Brasil, com a mesma qualidade e cuidado do presencial. Através de uma plataforma completa, você terá acesso a consultas, materiais educativos e acompanhamento personalizado. Se você está na região de Praia Grande, também atendo presencialmente em consultório acolhedor e moderno."
+      icon: HeartPulse,
+      title: "Nutrição Clínica",
+      description: "Acompanhamento nutricional individualizado com foco no trato gastrointestinal.",
+      modalContent: "A nutrição clínica é a base do meu atendimento. Com formação em Nutrição Clínica e Hospitalar, ofereço um acompanhamento que vai além da prescrição de dietas. Avalio exames, histórico de saúde e sintomas para criar estratégias nutricionais que promovam a recuperação e o bem-estar do paciente."
     },
     {
       icon: Brain,
-      title: "MÉTODO BMS (BODY. MIND. SOUL)",
-      description: "Transformação integral conectando corpo, mente e alma.",
-      modalContent: "O MÉTODO BMS é uma abordagem única que integra corpo (Body), mente (Mind) e alma (Soul) para uma transformação verdadeira e duradoura. Acredito que resultados reais nascem da conexão entre esses três pilares. Trabalhamos não apenas a alimentação, mas também os aspectos emocionais e comportamentais que influenciam suas escolhas. É uma jornada de autoconhecimento e empoderamento para acessar o seu melhor."
+      title: "Nutrição Comportamental",
+      description: "Mudanças sustentáveis sem dietas restritivas, terrorismo nutricional ou culpa alimentar.",
+      modalContent: "A nutrição comportamental é um pilar fundamental da minha prática. Promovo mudanças sustentáveis, sem dietas restritivas, terrorismo nutricional ou culpa alimentar. Trabalhamos juntos para que você desenvolva uma relação saudável com a comida, respeitando os sinais do seu corpo e o prazer em comer."
+    },
+    {
+      icon: Leaf,
+      title: "Nutrição Integrativa",
+      description: "Abordagem que conecta alimentação, saúde intestinal e bem-estar emocional.",
+      modalContent: "Na nutrição integrativa, olhamos para o paciente como um todo. A alimentação é vista como uma aliada da saúde física e emocional, respeitando a individualidade de cada pessoa. Integro conhecimentos de saúde intestinal, comportamento alimentar e equilíbrio nutricional para resultados completos e duradouros."
+    },
+    {
+      icon: Salad,
+      title: "Intolerâncias Alimentares",
+      description: "Investigação e manejo nutricional de intolerâncias e sensibilidades alimentares.",
+      modalContent: "Se você sofre com sintomas após comer determinados alimentos, posso ajudar. Realizo uma investigação detalhada dos seus hábitos e sintomas para identificar possíveis intolerâncias e sensibilidades alimentares, criando um plano alimentar que respeite suas necessidades sem comprometer o prazer e a variedade na alimentação."
+    },
+    {
+      icon: Video,
+      title: "Consultas Online e Presenciais",
+      description: "Flexibilidade total para caber na sua agenda e localização.",
+      modalContent: "Ofereço atendimento presencial em Santos/SP e também consultas online para todo o Brasil. Através de uma plataforma completa, você terá acesso a consultas, materiais educativos e acompanhamento personalizado com a mesma qualidade e cuidado do atendimento presencial."
     }
   ];
 
@@ -85,7 +84,6 @@ const Services = () => {
           ))}
         </div>
 
-        {/* Modal */}
         {selectedService !== null && (
           <ServiceModal
             isOpen={selectedService !== null}

@@ -9,30 +9,30 @@ const Quiz = () => {
 
   const questions = [
     {
-      question: "Qual é o seu principal objetivo agora?",
+      question: "Qual é a sua principal queixa hoje?",
       options: [
-        "Perder peso de forma saudável",
-        "Ganhar massa muscular",
-        "Melhorar minha energia e disposição",
-        "Não sei, quero descobrir"
+        "Distensão abdominal e gases",
+        "Constipação ou diarreia frequente",
+        "Refluxo ou queimação",
+        "Não sei, mas sinto que algo não está bem"
       ]
     },
     {
       question: "Como está sua relação com a comida?",
       options: [
-        "Tenho dificuldade para controlar o que como",
-        "Como bem, mas sinto que posso melhorar",
-        "Às vezes me sinto culpada depois de comer",
-        "Quero aprender a comer melhor"
+        "Sinto medo ou culpa ao comer certos alimentos",
+        "Como bem, mas tenho sintomas digestivos frequentes",
+        "Faço dietas restritivas e não vejo resultado",
+        "Quero aprender a comer melhor sem neura"
       ]
     },
     {
       question: "Qual sua maior dificuldade?",
       options: [
-        "Falta de tempo para me cuidar",
-        "Não sei como montar refeições saudáveis",
-        "Ansiedade interfere na minha alimentação",
-        "Não consigo manter consistência"
+        "Identificar quais alimentos me fazem mal",
+        "Manter uma alimentação equilibrada na rotina",
+        "Lidar com a ansiedade e compulsão alimentar",
+        "Encontrar um profissional que me escute de verdade"
       ]
     }
   ];
@@ -55,26 +55,25 @@ const Quiz = () => {
   }, [answers, currentQuestion, questions.length, isTransitioning]);
 
   const getResult = useCallback(() => {
-    const weightLossKeywords = ['perder peso', 'controlar', 'culpada'];
-    const muscleGainKeywords = ['massa muscular', 'comer melhor'];
-    const wellnessKeywords = ['energia', 'disposição', 'ansiedade', 'tempo'];
-
+    const giKeywords = ['distensão', 'constipação', 'diarreia', 'refluxo', 'gases', 'queimação', 'alimentos me fazem mal'];
+    const behavioralKeywords = ['medo', 'culpa', 'ansiedade', 'compulsão', 'restritivas', 'neura'];
+    
     const answerText = answers.join(' ').toLowerCase();
     
-    if (weightLossKeywords.some(keyword => answerText.includes(keyword))) {
+    if (giKeywords.some(keyword => answerText.includes(keyword))) {
       return {
-        title: "Emagrecimento Saudável pode ser seu caminho! 🌸",
-        description: "Baseado nas suas respostas, você se beneficiaria de um acompanhamento focado em emagrecimento consciente e mudança de hábitos alimentares."
+        title: "Acompanhamento em Saúde Gastrointestinal 🌿",
+        description: "Baseado nas suas respostas, você se beneficiaria de um acompanhamento focado na investigação e tratamento dos seus sintomas digestivos, com um plano nutricional personalizado para restaurar o equilíbrio intestinal."
       };
-    } else if (muscleGainKeywords.some(keyword => answerText.includes(keyword))) {
+    } else if (behavioralKeywords.some(keyword => answerText.includes(keyword))) {
       return {
-        title: "Ganho de Massa Muscular é perfeito para você! 💪",
-        description: "Suas respostas indicam que você está pronta para focar no fortalecimento e tonificação do seu corpo através da nutrição estratégica."
+        title: "Nutrição Comportamental é o caminho! 💚",
+        description: "Suas respostas indicam que trabalhar a relação com a comida é essencial. Juntas, vamos construir uma alimentação sem culpa, sem restrições e com muito mais prazer e equilíbrio."
       };
     } else {
       return {
-        title: "Bem-estar e Reeducação Alimentar é o ideal! ✨",
-        description: "Você se beneficiaria de um acompanhamento holístico, focado em energia, disposição e uma relação saudável com a comida."
+        title: "Nutrição Integrativa e Individualizada ✨",
+        description: "Você se beneficiaria de um acompanhamento completo que olha para o seu corpo como um todo — intestino, comportamento alimentar e bem-estar emocional."
       };
     }
   }, [answers]);
@@ -109,7 +108,7 @@ const Quiz = () => {
             
             <div className="space-y-4">
               <a 
-                href="https://wa.me/5513996631970"
+                href="https://wa.me/5513981214037"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 bg-chrome-gold text-white px-8 py-4 rounded-full font-semibold text-lg hover-lift shadow-lg hover:bg-chrome-dark transition-all"
@@ -141,11 +140,11 @@ const Quiz = () => {
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-rose mb-6">
-            Descubra seu caminho ideal
+            Descubra como posso te ajudar
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-chrome-gold to-chrome-dark rounded-full mx-auto mb-4"></div>
           <p className="text-lg text-gray-rose/80">
-            Será que o melhor caminho para você é emagrecer ou ganhar massa?
+            Responda 3 perguntas rápidas e descubra o melhor caminho para a sua saúde
           </p>
         </div>
         

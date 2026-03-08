@@ -3,37 +3,37 @@ import { Star, Quote } from 'lucide-react';
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "A Karine mudou minha forma de ver a alimentação. Ela é humana, acessível e maravilhosa. Finalmente consegui emagrecer sem sofrimento!",
+      quote: "A Lethícia mudou minha relação com a comida. Finalmente entendi que comer bem não precisa ser sofrido. Meus sintomas intestinais melhoraram muito!",
       name: "Camila",
       age: "28 anos",
       image: "/lovable-uploads/68e54351-155a-4d01-ae41-61d0c1c4b649.png"
     },
     {
-      quote: "Depois do acompanhamento com a Karine, me senti empoderada e finalmente em paz com meu corpo. Ela entende as dificuldades da mulher moderna.",
+      quote: "Depois do acompanhamento com a Lethícia, minha distensão abdominal praticamente sumiu. Ela realmente escuta e entende o que você está passando.",
       name: "Juliana", 
       age: "35 anos",
       image: "/lovable-uploads/juliana-testimonial.png"
     },
     {
-      quote: "O cuidado da Karine vai além da nutrição. Ela me ajudou a ter uma relação saudável com a comida e comigo mesma. Recomendo de olhos fechados!",
+      quote: "O cuidado da Lethícia vai além da nutrição. Ela me ajudou a entender meu corpo e a ter uma alimentação sem culpa. Recomendo de olhos fechados!",
       name: "Fernanda",
       age: "31 anos", 
       image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
     },
     {
-      quote: "Pensava que nunca conseguiria ganhar massa magra. A Karine me provou o contrário com um plano perfeito para mim!",
+      quote: "Sofria com refluxo e constipação há anos. Com o plano da Lethícia, em poucos meses já senti uma melhora enorme na qualidade de vida.",
       name: "Patrícia",
       age: "29 anos",
       image: "/lovable-uploads/patricia-testimonial.png"
     },
     {
-      quote: "A consulta com a Karine foi transformadora. Ela realmente escuta e cria um plano que funciona na vida real, não só na teoria.",
+      quote: "A consulta com a Lethícia foi transformadora. Ela realmente investiga a causa dos sintomas e cria um plano que funciona na vida real.",
       name: "Renata",
       age: "33 anos",
       image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
     },
     {
-      quote: "O Método BMS mudou minha vida. Hoje me sinto equilibrada e com muito mais disposição, conectada com meu corpo e mente!",
+      quote: "A nutrição comportamental mudou minha vida. Hoje como sem medo, sem culpa e me sinto muito mais equilibrada e disposta!",
       name: "Luciana",
       age: "27 anos",
       image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
@@ -49,7 +49,7 @@ const Testimonials = () => {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-chrome-gold to-chrome-dark rounded-full mx-auto mb-4"></div>
           <p className="text-lg text-gray-rose/80 max-w-2xl mx-auto">
-            Histórias reais de transformação e empoderamento
+            Histórias reais de quem recuperou a saúde intestinal e a paz com a alimentação
           </p>
         </div>
         
