@@ -7,6 +7,7 @@ const Quiz = () => {
   const [answers, setAnswers] = useState<string[]>([]);
   const [showResult, setShowResult] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [formOpen, setFormOpen] = useState(false);
 
   const questions = [
     {
