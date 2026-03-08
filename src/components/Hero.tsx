@@ -2,13 +2,13 @@ import { Phone, MessageCircle } from 'lucide-react';
 
 const Hero = () => {
   const whatsappUrl = "https://wa.me/5513981214037";
-  
+
   return (
     <section className="min-h-screen flex flex-col bg-gradient-to-br from-white to-nude-soft">
       {/* Header with Logo */}
       <header className="w-full py-6 px-4">
         <div className="max-w-6xl mx-auto flex justify-center lg:justify-start">
-          <img src="/lovable-uploads/logo-lethicia-nunes.png" alt="Lethícia Nunes Nutricionista" className="h-16 md:h-20 object-contain" />
+          <img alt="Lethícia Nunes Nutricionista" className="h-16 md:h-20 object-contain" src="/lovable-uploads/ff2c0f19-5964-48d0-9b6b-09dcd048a74c.png" />
         </div>
       </header>
 
@@ -55,8 +55,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Hero;
