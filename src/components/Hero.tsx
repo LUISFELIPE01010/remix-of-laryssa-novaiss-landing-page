@@ -2,12 +2,12 @@ import { Phone, MessageCircle, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 const navLinks = [
-  { label: 'Sobre', href: '#about' },
-  { label: 'Serviços', href: '#services' },
-  { label: 'Resultados', href: '#results' },
-  { label: 'Depoimentos', href: '#testimonials' },
-  { label: 'Contato', href: '#contact' },
-];
+{ label: 'Sobre', href: '#about' },
+{ label: 'Serviços', href: '#services' },
+{ label: 'Resultados', href: '#results' },
+{ label: 'Depoimentos', href: '#testimonials' },
+{ label: 'Contato', href: '#contact' }];
+
 
 const Hero = () => {
   const whatsappUrl = "https://wa.me/5513981214037";
@@ -22,11 +22,11 @@ const Hero = () => {
           
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-6">
-            {navLinks.map((link) => (
-              <a key={link.href} href={link.href} className="text-sm font-medium text-gray-rose hover:text-chrome-gold transition-colors">
+            {navLinks.map((link) =>
+            <a key={link.href} href={link.href} className="text-sm font-medium text-gray-rose hover:text-chrome-gold transition-colors">
                 {link.label}
               </a>
-            ))}
+            )}
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="bg-chrome-gold text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-chrome-dark transition-all">
               Agendar
             </a>
@@ -39,18 +39,18 @@ const Hero = () => {
         </div>
 
         {/* Mobile Nav */}
-        {menuOpen && (
-          <nav className="md:hidden mt-4 pb-4 flex flex-col gap-3 border-t border-chrome-light/30 pt-4">
-            {navLinks.map((link) => (
-              <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="text-sm font-medium text-gray-rose hover:text-chrome-gold transition-colors px-2 py-1">
+        {menuOpen &&
+        <nav className="md:hidden mt-4 pb-4 flex flex-col gap-3 border-t border-chrome-light/30 pt-4">
+            {navLinks.map((link) =>
+          <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className="text-sm font-medium text-gray-rose hover:text-chrome-gold transition-colors px-2 py-1">
                 {link.label}
               </a>
-            ))}
+          )}
             <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="bg-chrome-gold text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-chrome-dark transition-all text-center mt-2">
               Agendar consulta
             </a>
           </nav>
-        )}
+        }
       </header>
 
       {/* Hero Content */}
@@ -60,7 +60,7 @@ const Hero = () => {
           <div className="animate-slide-in-right lg:order-2 order-first">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-chrome-light to-gold-accent rounded-3xl transform rotate-6 opacity-20"></div>
-              <img alt="Lethícia Nunes, nutricionista sorrindo em ambiente profissional" className="relative rounded-3xl shadow-2xl w-full max-w-xs md:max-w-md mx-auto object-cover h-[320px] md:h-[500px]" loading="eager" src="/lovable-uploads/lethicia-foto3.jpg" />
+              <img alt="Lethícia Nunes, nutricionista sorrindo em ambiente profissional" className="relative rounded-3xl shadow-2xl w-full max-w-xs md:max-w-md mx-auto object-cover h-[320px] md:h-[500px]" loading="eager" src="/lovable-uploads/6a4e2531-0216-4050-9fd9-76fdbfa72be5.jpg" />
             </div>
           </div>
 
@@ -96,8 +96,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Hero;
