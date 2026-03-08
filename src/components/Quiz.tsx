@@ -1,5 +1,6 @@
 import { useState, useCallback } from 'react';
 import { CheckCircle, ArrowRight, MessageCircle } from 'lucide-react';
+import WhatsAppFormModal from './WhatsAppFormModal';
 
 const Quiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
