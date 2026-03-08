@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Header with Logo */}
       <header className="w-full py-6 px-4">
         <div className="max-w-6xl mx-auto flex justify-center lg:justify-start">
-          <img alt="Lethícia Nunes Nutricionista" className="h-16 md:h-20 object-contain" src="/lovable-uploads/ff2c0f19-5964-48d0-9b6b-09dcd048a74c.png" />
+          <img alt="Lethícia Nunes Nutricionista" className="h-24 md:h-32 object-contain" src="/lovable-uploads/ff2c0f19-5964-48d0-9b6b-09dcd048a74c.png" />
         </div>
       </header>
 
