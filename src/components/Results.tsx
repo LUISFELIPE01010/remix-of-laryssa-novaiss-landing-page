@@ -2,13 +2,18 @@ import { Star, Heart, ArrowRight, TrendingUp } from 'lucide-react';
 import { useState } from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import WhatsAppFormModal from './WhatsAppFormModal';
+import resultDistensao from '@/assets/result-maria.jpg';
+import resultSaudeIntestinal from '@/assets/result-ana.jpg';
+import resultRelacaoComida from '@/assets/result-carla.jpg';
+import resultIntolerancias from '@/assets/result-juliana.jpg';
+import resultEnergia from '@/assets/result-fernanda.jpg';
 
 const Results = () => {
   const [formOpen, setFormOpen] = useState(false);
 
   const resultItems = [
     {
-      image: '/lovable-uploads/result-distensao.jpg',
+      image: resultDistensao,
       alt: 'Paciente com alívio da distensão abdominal',
       title: 'Alívio da Distensão',
       description: 'Fim do desconforto abdominal',
@@ -17,7 +22,7 @@ const Results = () => {
         'Depois de anos sofrendo com barriga inchada, finalmente encontrei alívio com o acompanhamento da Lethícia!',
     },
     {
-      image: '/lovable-uploads/result-saude-intestinal.jpg',
+      image: resultSaudeIntestinal,
       alt: 'Paciente com saúde intestinal restaurada',
       title: 'Saúde Intestinal Restaurada',
       description: 'Equilíbrio digestivo conquistado',
@@ -26,7 +31,7 @@ const Results = () => {
         'Minha digestão melhorou completamente. Sem mais gases, sem mais desconforto. Me sinto outra pessoa!',
     },
     {
-      image: '/lovable-uploads/result-relacao-comida.jpg',
+      image: resultRelacaoComida,
       alt: 'Paciente com relação saudável com a comida',
       title: 'Relação Saudável com a Comida',
       description: 'Sem culpa, sem restrição',
@@ -34,7 +39,7 @@ const Results = () => {
       feedback: 'Aprendi a comer sem medo e sem culpa. A nutrição comportamental mudou minha vida.',
     },
     {
-      image: '/lovable-uploads/juliana-testimonial.png',
+      image: resultIntolerancias,
       alt: 'Paciente feliz com resultado do tratamento',
       title: 'Fim das Intolerâncias',
       description: 'Identificação e manejo alimentar',
@@ -42,7 +47,7 @@ const Results = () => {
       feedback: 'Descobri quais alimentos me faziam mal e hoje tenho um cardápio variado e sem sintomas.',
     },
     {
-      image: '/lovable-uploads/patricia-testimonial.png',
+      image: resultEnergia,
       alt: 'Paciente ativa e com mais energia',
       title: 'Mais Energia e Disposição',
       description: 'Bem-estar recuperado',
