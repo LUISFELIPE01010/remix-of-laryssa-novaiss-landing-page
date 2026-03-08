@@ -4,7 +4,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 const Results = () => {
   const beforeAfterImages = [
     {
-      image: resultMaria,
+      image: "/images/result-maria.jpg",
       alt: "Paciente saudável após tratamento gastrointestinal",
       title: "Alívio da Distensão",
       description: "Fim do desconforto abdominal",
