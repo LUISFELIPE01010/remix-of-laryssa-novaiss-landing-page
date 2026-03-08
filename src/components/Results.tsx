@@ -28,7 +28,7 @@ const Results = () => {
       feedback: "Aprendi a comer sem medo e sem culpa. A nutrição comportamental mudou minha vida."
     },
     {
-      image: resultJuliana,
+      image: "/images/result-juliana.jpg",
       alt: "Paciente feliz com resultado do tratamento",
       title: "Fim das Intolerâncias",
       description: "Identificação e manejo alimentar",
