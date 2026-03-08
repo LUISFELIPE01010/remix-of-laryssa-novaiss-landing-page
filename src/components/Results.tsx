@@ -4,6 +4,7 @@ import { useState } from 'react';
 import WhatsAppFormModal from './WhatsAppFormModal';
 
 const Results = () => {
+  const [formOpen, setFormOpen] = useState(false);
   const beforeAfterImages = [
     {
       image: "/images/result-maria.jpg",
