@@ -135,6 +135,7 @@ const Results = () => {
         </div>
       </div>
     </section>
+    <WhatsAppFormModal isOpen={formOpen} onClose={() => setFormOpen(false)} />
   );
 };
 
