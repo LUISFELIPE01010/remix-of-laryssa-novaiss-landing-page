@@ -1,15 +1,10 @@
 import { Star, TrendingUp, Heart, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import resultMaria from '@/assets/result-maria.jpg';
-import resultAna from '@/assets/result-ana.jpg';
-import resultCarla from '@/assets/result-carla.jpg';
-import resultJuliana from '@/assets/result-juliana.jpg';
-import resultFernanda from '@/assets/result-fernanda.jpg';
 
 const Results = () => {
   const beforeAfterImages = [
     {
-      image: resultMaria,
+      image: "/images/result-maria.jpg",
       alt: "Paciente saudável após tratamento gastrointestinal",
       title: "Alívio da Distensão",
       description: "Fim do desconforto abdominal",
@@ -17,7 +12,7 @@ const Results = () => {
       feedback: "Depois de anos sofrendo com barriga inchada, finalmente encontrei alívio com o acompanhamento da Lethícia!"
     },
     {
-      image: resultAna,
+      image: "/images/result-ana.jpg",
       alt: "Paciente com mais disposição e energia",
       title: "Saúde Intestinal Restaurada",
       description: "Equilíbrio digestivo conquistado",
@@ -25,7 +20,7 @@ const Results = () => {
       feedback: "Minha digestão melhorou completamente. Sem mais gases, sem mais desconforto. Me sinto outra pessoa!"
     },
     {
-      image: resultCarla,
+      image: "/images/result-carla.jpg",
       alt: "Paciente com alimentação equilibrada",
       title: "Relação Saudável com a Comida",
       description: "Sem culpa, sem restrição",
@@ -33,7 +28,7 @@ const Results = () => {
       feedback: "Aprendi a comer sem medo e sem culpa. A nutrição comportamental mudou minha vida."
     },
     {
-      image: resultJuliana,
+      image: "/images/result-juliana.jpg",
       alt: "Paciente feliz com resultado do tratamento",
       title: "Fim das Intolerâncias",
       description: "Identificação e manejo alimentar",
@@ -41,7 +36,7 @@ const Results = () => {
       feedback: "Descobri quais alimentos me faziam mal e hoje tenho um cardápio variado e sem sintomas."
     },
     {
-      image: resultFernanda,
+      image: "/images/result-fernanda.jpg",
       alt: "Paciente ativa e com mais energia",
       title: "Mais Energia e Disposição",
       description: "Bem-estar recuperado",
