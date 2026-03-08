@@ -1,31 +1,30 @@
-
 import { Apple, Clock, Droplets, Smile } from 'lucide-react';
 
 const Tips = () => {
   const tips = [
     {
       icon: Apple,
-      title: "Como montar um prato equilibrado",
-      description: "A regra simples: 1/2 prato de vegetais, 1/4 de proteína e 1/4 de carboidrato integral.",
-      color: "from-rose-light to-rose-burnt/20"
+      title: "Alimentos amigos do intestino",
+      description: "Fibras, probióticos e prebióticos são essenciais. Inclua frutas, verduras, iogurte natural e grãos integrais na sua rotina.",
+      color: "from-chrome-light to-gold-accent/30"
     },
     {
       icon: Smile,
-      title: "Dicas para manter a disciplina com leveza",
-      description: "Foque no progresso, não na perfeição. Pequenos passos consistentes geram grandes resultados.",
-      color: "from-rose-accent to-rose-light/30"
+      title: "Coma sem culpa e sem medo",
+      description: "A nutrição comportamental ensina que não existem alimentos proibidos. O equilíbrio e a consciência são mais importantes que a restrição.",
+      color: "from-gold-accent to-chrome-light/30"
     },
     {
       icon: Clock,
-      title: "Snacks rápidos e saudáveis",
-      description: "Frutas com oleaginosas, iogurte natural com frutas vermelhas ou um mix de castanhas.",
-      color: "from-nude-soft to-rose-light/30"
+      title: "Respeite os sinais do seu corpo",
+      description: "Coma quando sentir fome, pare quando estiver satisfeita. Prestar atenção nos sinais do corpo é o primeiro passo para uma alimentação saudável.",
+      color: "from-nude-soft to-chrome-light/30"
     },
     {
       icon: Droplets,
-      title: "Hidratação: o poder da água",
-      description: "Beba pelo menos 35ml por kg de peso corporal. Adicione limão ou hortelã para variar.",
-      color: "from-rose-accent to-rose-burnt/10"
+      title: "Hidratação e saúde intestinal",
+      description: "A água é fundamental para o bom funcionamento do intestino. Beba pelo menos 35ml por kg de peso corporal ao longo do dia.",
+      color: "from-chrome-light to-nude-soft/30"
     }
   ];
 
@@ -36,9 +35,9 @@ const Tips = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-rose mb-6">
             Dicas da Nutri
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-rose-burnt to-rose-dark rounded-full mx-auto mb-4"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-chrome-gold to-chrome-dark rounded-full mx-auto mb-4"></div>
           <p className="text-lg text-gray-rose/80 max-w-2xl mx-auto">
-            Pequenas mudanças que fazem toda a diferença no seu dia a dia
+            Pequenas mudanças que fazem toda a diferença na sua saúde intestinal
           </p>
         </div>
         
@@ -46,14 +45,14 @@ const Tips = () => {
           {tips.map((tip, index) => (
             <div 
               key={index}
-              className="group bg-white rounded-3xl p-8 shadow-lg hover-lift animate-on-scroll border border-rose-light/20 relative overflow-hidden"
+              className="group bg-white rounded-3xl p-8 shadow-lg hover-lift animate-on-scroll border border-chrome-light/20 relative overflow-hidden"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className={`absolute inset-0 bg-gradient-to-br ${tip.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
               
               <div className="relative z-10">
-                <div className="w-16 h-16 bg-gradient-to-br from-rose-light to-rose-accent rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <tip.icon className="w-8 h-8 text-rose-dark" />
+                <div className="w-16 h-16 bg-gradient-to-br from-chrome-light to-gold-accent rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <tip.icon className="w-8 h-8 text-chrome-dark" />
                 </div>
                 
                 <h3 className="text-xl font-semibold text-gray-rose mb-4">

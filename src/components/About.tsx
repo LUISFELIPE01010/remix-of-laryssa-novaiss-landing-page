@@ -1,13 +1,15 @@
 import { Star, Award, Users } from 'lucide-react';
+
 const About = () => {
-  return <section className="py-20 bg-white">
+  return (
+    <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image */}
           <div className="animate-on-scroll">
             <div className="relative">
               <div className="absolute inset-0 bg-chrome-light rounded-3xl transform -rotate-3 opacity-30"></div>
-              <img alt="Karine Keppler em consulta nutricional, demonstrando cuidado e atenção com paciente" className="relative rounded-3xl shadow-xl w-full max-w-md mx-auto object-cover h-[400px] md:h-[500px]" loading="lazy" src="/lovable-uploads/45e3a580-9574-49fa-bc97-f290b837b80c.jpg" />
+              <img alt="Lethícia Nunes em consulta nutricional" className="relative rounded-3xl shadow-xl w-full max-w-md mx-auto object-cover h-[400px] md:h-[500px]" loading="lazy" src="/lovable-uploads/lethicia-foto1.jpg" />
             </div>
           </div>
           
@@ -21,11 +23,11 @@ const About = () => {
             </div>
             
             <p className="text-lg text-gray-rose leading-relaxed">
-              Sou nutricionista por escolha e por propósito. Há 9 anos deixei a engenharia para seguir a área da saúde, onde encontrei minha verdadeira vocação: cuidar de pessoas de forma integral.
+              Olá! Sou Lethícia Nunes, nutricionista clínica com atuação voltada para a saúde gastrointestinal e a nutrição comportamental. Formada em Nutrição em 2018 e pós-graduada em Nutrição Clínica e Hospitalar, ajudo pessoas a desenvolverem uma relação mais equilibrada e consciente com a alimentação.
             </p>
             
             <p className="text-lg text-gray-rose leading-relaxed">
-              Ao longo dessa jornada, me dediquei intensamente aos estudos e ao desenvolvimento humano, acreditando que resultados reais nascem da conexão entre corpo, mente e alma. Hoje, com meu consultório, uno conhecimento técnico, escuta e empatia para ajudar cada paciente a acessar o seu melhor.
+              Meu trabalho é baseado em uma abordagem individualizada, que considera não apenas os sintomas físicos, mas também os hábitos alimentares, o comportamento, a rotina e o contexto de vida de cada paciente. Acredito que a alimentação deve ser uma aliada da saúde física e emocional.
             </p>
             
             {/* Stats */}
@@ -34,15 +36,15 @@ const About = () => {
                 <div className="w-16 h-16 bg-chrome-light rounded-full flex items-center justify-center mx-auto mb-3">
                   <Users className="w-8 h-8 text-chrome-dark" />
                 </div>
-                <div className="text-2xl font-bold text-gray-rose">500+</div>
-                <div className="text-sm text-gray-rose">Vidas transformadas</div>
+                <div className="text-2xl font-bold text-gray-rose">300+</div>
+                <div className="text-sm text-gray-rose">Pacientes atendidos</div>
               </div>
               
               <div className="text-center">
                 <div className="w-16 h-16 bg-gold-accent rounded-full flex items-center justify-center mx-auto mb-3">
                   <Star className="w-8 h-8 text-chrome-dark" />
                 </div>
-                <div className="text-2xl font-bold text-gray-rose">9 anos</div>
+                <div className="text-2xl font-bold text-gray-rose">+6 anos</div>
                 <div className="text-sm text-gray-rose">De experiência</div>
               </div>
               
@@ -51,12 +53,14 @@ const About = () => {
                   <Award className="w-8 h-8 text-chrome-dark" />
                 </div>
                 <div className="text-2xl font-bold text-gray-rose">100%</div>
-                <div className="text-sm text-gray-rose">Personalizado</div>
+                <div className="text-sm text-gray-rose">Individualizado</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default About;

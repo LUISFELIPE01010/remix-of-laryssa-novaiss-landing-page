@@ -11,10 +11,10 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Heart className="w-6 h-6 fill-current text-chrome-light" />
-              <span className="text-xl font-semibold">Karine Keppler</span>
+              <span className="text-xl font-semibold">Lethícia Nunes</span>
             </div>
             <p className="text-white/80 leading-relaxed">
-              Nutricionista dedicada a transformar vidas através da conexão entre corpo, mente e alma.
+              Nutricionista clínica especializada em saúde gastrointestinal e nutrição comportamental.
             </p>
           </div>
           
@@ -22,11 +22,11 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Serviços</h4>
             <ul className="space-y-2 text-white/80">
-              <li>Emagrecimento saudável</li>
-              <li>Ganho de massa magra</li>
-              <li>Ortomolecular</li>
-              <li>Método BMS</li>
-              <li>Consultas online</li>
+              <li>Saúde gastrointestinal</li>
+              <li>Nutrição clínica</li>
+              <li>Nutrição comportamental</li>
+              <li>Nutrição integrativa</li>
+              <li>Consultas online e presenciais</li>
             </ul>
           </div>
           
@@ -35,25 +35,25 @@ const Footer = () => {
             <h4 className="text-lg font-semibold">Contato</h4>
             <div className="space-y-3">
               <a 
-                href="https://wa.me/5513996631970" 
+                href="https://wa.me/5513981214037" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="flex items-center gap-3 text-white/80 hover:text-white transition-colors"
                 aria-label="Contato via WhatsApp"
               >
                 <MessageCircle className="w-5 h-5" />
-                (13) 99663-1970
+                (13) 98121-4037
               </a>
               
               <a 
-                href="https://www.instagram.com/nutrikarinekeppler/" 
+                href="https://www.instagram.com/nutri.lethicia/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="flex items-center gap-3 text-white/80 hover:text-white transition-colors"
                 aria-label="Seguir no Instagram"
               >
                 <Instagram className="w-5 h-5" />
-                @nutrikarinekeppler
+                @nutri.lethicia
               </a>
             </div>
           </div>
@@ -62,10 +62,10 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/20 pt-8 text-center">
           <p className="text-white/60 mb-4">
-            © {currentYear} Karine Keppler - Nutricionista. Todos os direitos reservados.
+            © {currentYear} Lethícia Nunes - Nutricionista. Todos os direitos reservados.
           </p>
           <p className="text-white/60 text-sm">
-            Atendimento online para todo o Brasil • Presencial: Rua Campinas, 220 - Sala 18, Boqueirão - Praia Grande/SP
+            Atendimento online para todo o Brasil • Presencial: Av. Ana Costa, 228 - 20° e 21° andar - Gonzaga, Santos/SP
           </p>
         </div>
       </div>

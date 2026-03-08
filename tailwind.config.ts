@@ -63,14 +63,16 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Updated color palette - Chrome/Gold theme for Karine Keppler
-				'chrome-gold': '#C5A572',
-				'chrome-light': '#D4B896',
-				'chrome-dark': '#A68B4B',
-				'nude-soft': '#FAF8F5',
+				// Pastel/warm palette for Lethícia Nunes
+				'chrome-gold': '#A89279',
+				'chrome-light': '#D6CBBC',
+				'chrome-dark': '#7D6B55',
+				'nude-soft': '#F2EEE9',
 				'gray-rose': '#4A4A4A',
-				'gold-accent': '#E8D5B5',
-				'gold-dark': '#8B7355'
+				'gold-accent': '#E0D5C7',
+				'gold-dark': '#6B5D4F',
+				'pastel-green': '#B8C9B3',
+				'pastel-sage': '#C5D1C0',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -82,60 +84,28 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
 				},
 				'fade-in': {
-					'0%': {
-						opacity: '0',
-						transform: 'translateY(20px)'
-					},
-					'100%': {
-						opacity: '1',
-						transform: 'translateY(0)'
-					}
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
 				},
 				'slide-in-left': {
-					'0%': {
-						opacity: '0',
-						transform: 'translateX(-30px)'
-					},
-					'100%': {
-						opacity: '1',
-						transform: 'translateX(0)'
-					}
+					'0%': { opacity: '0', transform: 'translateX(-30px)' },
+					'100%': { opacity: '1', transform: 'translateX(0)' }
 				},
 				'slide-in-right': {
-					'0%': {
-						opacity: '0',
-						transform: 'translateX(30px)'
-					},
-					'100%': {
-						opacity: '1',
-						transform: 'translateX(0)'
-					}
+					'0%': { opacity: '0', transform: 'translateX(30px)' },
+					'100%': { opacity: '1', transform: 'translateX(0)' }
 				},
 				'scale-in': {
-					'0%': {
-						opacity: '0',
-						transform: 'scale(0.95)'
-					},
-					'100%': {
-						opacity: '1',
-						transform: 'scale(1)'
-					}
+					'0%': { opacity: '0', transform: 'scale(0.95)' },
+					'100%': { opacity: '1', transform: 'scale(1)' }
 				}
 			},
 			animation: {
