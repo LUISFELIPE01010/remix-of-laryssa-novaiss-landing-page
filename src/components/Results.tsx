@@ -1,5 +1,7 @@
 import { Star, TrendingUp, Heart, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { useState } from 'react';
+import WhatsAppFormModal from './WhatsAppFormModal';
 
 const Results = () => {
   const beforeAfterImages = [
