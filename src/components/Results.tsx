@@ -1,10 +1,5 @@
 import { Star, TrendingUp, Heart, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import resultMaria from '@/assets/result-maria.jpg';
-import resultAna from '@/assets/result-ana.jpg';
-import resultCarla from '@/assets/result-carla.jpg';
-import resultJuliana from '@/assets/result-juliana.jpg';
-import resultFernanda from '@/assets/result-fernanda.jpg';
 
 const Results = () => {
   const beforeAfterImages = [
