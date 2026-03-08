@@ -1,10 +1,15 @@
 import { Star, TrendingUp, Heart, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import resultMaria from '@/assets/result-maria.jpg';
+import resultAna from '@/assets/result-ana.jpg';
+import resultCarla from '@/assets/result-carla.jpg';
+import resultJuliana from '@/assets/result-juliana.jpg';
+import resultFernanda from '@/assets/result-fernanda.jpg';
 
 const Results = () => {
   const beforeAfterImages = [
     {
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: resultMaria,
       alt: "Paciente saudável após tratamento gastrointestinal",
       title: "Alívio da Distensão",
       description: "Fim do desconforto abdominal",
@@ -12,7 +17,7 @@ const Results = () => {
       feedback: "Depois de anos sofrendo com barriga inchada, finalmente encontrei alívio com o acompanhamento da Lethícia!"
     },
     {
-      image: "/lovable-uploads/ana-result.jpg",
+      image: resultAna,
       alt: "Paciente com mais disposição e energia",
       title: "Saúde Intestinal Restaurada",
       description: "Equilíbrio digestivo conquistado",
@@ -20,7 +25,7 @@ const Results = () => {
       feedback: "Minha digestão melhorou completamente. Sem mais gases, sem mais desconforto. Me sinto outra pessoa!"
     },
     {
-      image: "/lovable-uploads/carla-result.jpg",
+      image: resultCarla,
       alt: "Paciente com alimentação equilibrada",
       title: "Relação Saudável com a Comida",
       description: "Sem culpa, sem restrição",
@@ -28,7 +33,7 @@ const Results = () => {
       feedback: "Aprendi a comer sem medo e sem culpa. A nutrição comportamental mudou minha vida."
     },
     {
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: resultJuliana,
       alt: "Paciente feliz com resultado do tratamento",
       title: "Fim das Intolerâncias",
       description: "Identificação e manejo alimentar",
@@ -36,7 +41,7 @@ const Results = () => {
       feedback: "Descobri quais alimentos me faziam mal e hoje tenho um cardápio variado e sem sintomas."
     },
     {
-      image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: resultFernanda,
       alt: "Paciente ativa e com mais energia",
       title: "Mais Energia e Disposição",
       description: "Bem-estar recuperado",
