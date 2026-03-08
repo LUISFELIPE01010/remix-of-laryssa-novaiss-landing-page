@@ -2,6 +2,11 @@ import { Star, TrendingUp, Heart, ArrowRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { useState } from 'react';
 import WhatsAppFormModal from './WhatsAppFormModal';
+import resultMariaUser from '@/assets/result-maria-user.png';
+import resultAnaUser from '@/assets/result-ana-user.png';
+import resultCarlaUser from '@/assets/result-carla-user.png';
+import resultJuliana from '@/assets/result-juliana.jpg';
+import resultFernanda from '@/assets/result-fernanda.jpg';
 
 const Results = () => {
   const [formOpen, setFormOpen] = useState(false);
