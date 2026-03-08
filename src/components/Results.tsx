@@ -39,7 +39,7 @@ const Results = () => {
       feedback: "Descobri quais alimentos me faziam mal e hoje tenho um cardápio variado e sem sintomas."
     },
     {
-      image: "/images/result-fernanda.jpg",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
       alt: "Paciente ativa e com mais energia",
       title: "Mais Energia e Disposição",
       description: "Bem-estar recuperado",
