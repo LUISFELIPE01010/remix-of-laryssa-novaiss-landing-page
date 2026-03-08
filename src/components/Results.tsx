@@ -20,7 +20,7 @@ const Results = () => {
       feedback: "Minha digestão melhorou completamente. Sem mais gases, sem mais desconforto. Me sinto outra pessoa!"
     },
     {
-      image: resultCarla,
+      image: "/images/result-carla.jpg",
       alt: "Paciente com alimentação equilibrada",
       title: "Relação Saudável com a Comida",
       description: "Sem culpa, sem restrição",
