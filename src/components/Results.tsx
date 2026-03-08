@@ -123,16 +123,14 @@ const Results = () => {
               pode melhorar sua saúde intestinal e sua qualidade de vida.
             </p>
             
-            <a 
-              href="https://wa.me/5513981214037" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <button 
+              onClick={() => setFormOpen(true)}
               className="inline-flex items-center gap-2 bg-chrome-gold text-white px-8 py-4 rounded-full font-semibold hover-lift shadow-lg hover:bg-chrome-dark transition-all"
               aria-label="Agendar consulta via WhatsApp"
             >
               Quero cuidar da minha saúde
               <ArrowRight className="w-5 h-5" />
-            </a>
+            </button>
           </div>
         </div>
       </div>
