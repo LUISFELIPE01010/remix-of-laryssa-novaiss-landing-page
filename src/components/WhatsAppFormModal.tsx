@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MessageCircle, X, User, Target, MapPin } from 'lucide-react';
+import { MessageCircle, User, Target, MapPin } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { z } from 'zod';
 
