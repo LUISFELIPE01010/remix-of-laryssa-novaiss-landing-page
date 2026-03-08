@@ -15,7 +15,7 @@ const Results = () => {
       feedback: "Depois de anos sofrendo com barriga inchada, finalmente encontrei alívio com o acompanhamento da Lethícia!"
     },
     {
-      image: "/images/result-ana.jpg",
+      image: "/lovable-uploads/result-ana.png",
       alt: "Paciente com mais disposição e energia",
       title: "Saúde Intestinal Restaurada",
       description: "Equilíbrio digestivo conquistado",
