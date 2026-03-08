@@ -9,7 +9,7 @@ const About = () => {
           <div className="animate-on-scroll">
             <div className="relative">
               <div className="absolute inset-0 bg-chrome-light rounded-3xl transform -rotate-3 opacity-30"></div>
-              <img alt="Lethícia Nunes em consulta nutricional" className="relative rounded-3xl shadow-xl w-full max-w-md mx-auto object-cover h-[400px] md:h-[500px]" loading="lazy" src="/lovable-uploads/lethicia-foto1.jpg" />
+              <img alt="Lethícia Nunes em consulta nutricional" className="relative rounded-3xl shadow-xl w-full max-w-md mx-auto object-cover h-[400px] md:h-[500px]" loading="lazy" src="/lovable-uploads/787eb591-d3bc-4bfc-a62a-7585fac80851.jpg" />
             </div>
           </div>
           
@@ -59,8 +59,8 @@ const About = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default About;
