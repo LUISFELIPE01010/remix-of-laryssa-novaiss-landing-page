@@ -7,7 +7,7 @@ const Results = () => {
   const [formOpen, setFormOpen] = useState(false);
   const beforeAfterImages = [
     {
-      image: "/images/result-maria.jpg",
+      image: "/lovable-uploads/result-maria.png",
       alt: "Paciente saudável após tratamento gastrointestinal",
       title: "Alívio da Distensão",
       description: "Fim do desconforto abdominal",
@@ -15,7 +15,7 @@ const Results = () => {
       feedback: "Depois de anos sofrendo com barriga inchada, finalmente encontrei alívio com o acompanhamento da Lethícia!"
     },
     {
-      image: "/images/result-ana.jpg",
+      image: "/lovable-uploads/result-ana.png",
       alt: "Paciente com mais disposição e energia",
       title: "Saúde Intestinal Restaurada",
       description: "Equilíbrio digestivo conquistado",
@@ -23,7 +23,7 @@ const Results = () => {
       feedback: "Minha digestão melhorou completamente. Sem mais gases, sem mais desconforto. Me sinto outra pessoa!"
     },
     {
-      image: "/images/result-carla.jpg",
+      image: "/lovable-uploads/result-carla.png",
       alt: "Paciente com alimentação equilibrada",
       title: "Relação Saudável com a Comida",
       description: "Sem culpa, sem restrição",
@@ -31,7 +31,7 @@ const Results = () => {
       feedback: "Aprendi a comer sem medo e sem culpa. A nutrição comportamental mudou minha vida."
     },
     {
-      image: "/images/result-juliana.jpg",
+      image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80",
       alt: "Paciente feliz com resultado do tratamento",
       title: "Fim das Intolerâncias",
       description: "Identificação e manejo alimentar",
@@ -39,7 +39,7 @@ const Results = () => {
       feedback: "Descobri quais alimentos me faziam mal e hoje tenho um cardápio variado e sem sintomas."
     },
     {
-      image: "/images/result-fernanda.jpg",
+      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
       alt: "Paciente ativa e com mais energia",
       title: "Mais Energia e Disposição",
       description: "Bem-estar recuperado",
